@@ -1,1 +1,1 @@
-worker: python3 waifu.py
+web: python3 waifu.py
