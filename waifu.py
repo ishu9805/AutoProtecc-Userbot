@@ -5,9 +5,9 @@ from pymongo import MongoClient
 app = Flask(__name__)
 
 # Connect to MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['your_database']  # Replace 'your_database' with your actual database name
-collection = db['your_collection']  # Replace 'your_collection' with your actual collection name
+client = MongoClient('mongodb+srv://naruto:hinatababy@cluster0.rqyiyzx.mongodb.net/')
+db = client['database']  # Replace 'your_database' with your actual database name
+collection = db['db_collection']  # Replace 'your_collection' with your actual collection name
 
 @app.route('/export_characters', methods=['GET'])
 def export_characters_to_json():
